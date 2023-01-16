@@ -1,17 +1,21 @@
 fn main(){
 
-    let mut MyFuel = String::from("RP-1");
-    let length = FuelChek(&MyFuel);
+    let mut planet = "earth";
+
+    {
+        //Without shadowing the original variable it modifies the original data
+        println!("Current Planet = {}", planet);
+        planet = "Ur Mom";
+        println!("Current Planet = {}", planet);
+    }
     
-    println!("Length of Fuel is {}", length);
-
+    println!("Current Planet = {}", planet);
+    println!("_______________________");
+    {
+        //By shadowing it weill create a temporary variable only for use within the brackets
+        println!("2. Current Planet = {}", planet);
+        let planet = 4;
+        println!("2. Current Planet = {}", planet);
+    }
+    println!("2. Current Planet = {}", planet);
 }
-
-fn FuelChek(Fuel: &String) -> usize{
-
-    println!("You're using the fuel {}", Fuel);
-    let length = Fuel.len();
-    length
-}
-
-//Using a reference to change a variable by "borrowing it" rather than cahnging ownership and passing it back
