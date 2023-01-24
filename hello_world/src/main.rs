@@ -1,21 +1,32 @@
+use std::env;
+use std::fs;
+
+
 fn main(){
 
-    let mut planet = "earth";
+    if env::args().len() != 2{
+        println!("Program Needs Only 2 Arguments");
+        return;
+    }
+    //Set order of args to be 1. File you want to search 2. Name that you want to search
 
-    {
-        //Without shadowing the original variable it modifies the original data
-        println!("Current Planet = {}", planet);
-        planet = "Ur Mom";
-        println!("Current Planet = {}", planet);
+    let GiveList = 
+
+
+
+
+
+    for (index, arg) in env::args().enumerate(){
+        println!("arg {} = {}", index, arg);
     }
-    
-    println!("Current Planet = {}", planet);
-    println!("_______________________");
-    {
-        //By shadowing it weill create a temporary variable only for use within the brackets
-        println!("2. Current Planet = {}", planet);
-        let planet = 4;
-        println!("2. Current Planet = {}", planet);
-    }
-    println!("2. Current Planet = {}", planet);
+
+
 }
+
+/* Input is going to be:.
+
+arg 0 = /workspaces/LearningTime/hello_world/target/debug/hello_world
+arg 1 = roster.txt
+arg 2 = michael
+
+*/

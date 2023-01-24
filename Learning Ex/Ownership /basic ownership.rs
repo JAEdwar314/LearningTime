@@ -19,3 +19,6 @@ fn main(){
     }
     println!("2. Current Planet = {}", planet);
 }
+
+//Know that for ownership the stack only data types will just automatically clone the value
+//Anything that lives on the HEAP will transfer the ownership when another car is assigned. 
