@@ -13,7 +13,7 @@ fn main(){
     }
 /* Notes:
     1.Arrays use square brackets "[]" and 0-index notation, refer to normally as per lists in other languages (can only have the same data)
-        1a. i.e. Same data includes: Only 1 actual data type in an list of array (i.e. ints only, lists of 3 long each but not verying sizes)
+        1a. i.e. Same data includes: Only 1 actual data type in an list of array (i.e. ints only, lists of 3 long each but not varying sizes)
     2. Tuples are lists of varying data type, call item by refering to var_name dot 0-index notation value
 
 */
