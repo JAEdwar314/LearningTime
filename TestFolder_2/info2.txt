@@ -1,0 +1,5 @@
+This is folder 2
+you have made it here because of some weird reason
+
+line 3 skipped, now you're on line 4
+good job
